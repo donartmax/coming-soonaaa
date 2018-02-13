@@ -1,0 +1,83 @@
+/* COMING SOON */
+
+body {
+    margin: 0;
+    background-image: url("images/graphy-dark.png");
+    font-family: 'Anonymous Pro', monospace;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    z-index: 0;
+}
+
+#container {
+    min-height: 100%;
+    position: relative;
+}
+
+#header {
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    height: 25%;
+    padding-bottom:10px;
+}
+
+#body {  
+    height: 65%;
+    padding: 20px;
+}
+
+#footer {
+    position: relative;
+    margin: auto;
+    bottom: 0;
+    width: 80%;
+    height: 10%;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.galaksija {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+.hakaton {
+    width: 16%;
+}
+
+.fonis {
+    width: 15%;
+}
+
+.comingsoon {
+    color: #0176fc;
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 800%;
+    font-weight: bold;
+}
+
+.tekst {
+    color: #FFF;
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 200%;
+}
+
+.center {
+    margin: auto;
+    width: 80%;
+    padding: 10px; 
+}
+
+.zaprati a {
+    margin:7px;
+    color: #fff;
+    transition: 0.5s;
+}
+.zaprati a:hover {
+    text-decoration: none;
+    color: #FAA830;
+}
+
+
