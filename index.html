@@ -2,13 +2,12 @@
 <html lang="sr">
 
 <head>
-    <meta charset="UTF-8">
+
     <title>FON Hakaton // 2018</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
-    crossorigin="anonymous">
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+          crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Audiowide|Aldrich" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
  
@@ -18,35 +17,28 @@
 
 <body style="background-color:#01000a">
 
-    <img src='images/galaksija.png' class='galaksija w-100'>
     <div id="container">
+        <img src='images/galaksija.png' class='galaksija'>
 
         <div id="header">
 
-            <img class="hakaton m-10 img-responsive" src="images/logo.png" alt="FON Hakaton">
+            <img class="hakaton m-10" src="images/logo.png" alt="FON Hakaton">
         </div>
 
         <div class="center" id="body">
             <div class="comingsoon ">
-                <p class='text-center pb-3 display-3'> COMING SOON </p>
+                <p class='text-center pb-3 '> COMING SOON </p>
             </div>
 
             <div class="tekst ">
                 <p class='text-center pb-2'> Prijave počinju 26. februara</p>
-                <h4 class='text-center pb-2'>Ne propusti priliku!</h4>
+                <h4 class='text-center pb-2'>Ne propuštaj jedinstvenu priliku</h4>
             </div>
-            <hr>
-            <p>Upiši svoj email ako želiš da te obavestimo o otvaranju prijava.</p>
-            <form class='nl-form'> 
-                    <input type='email' id="mail-input" name='email' placeholder='Tvoj email'>
-                    <button type='submit' id="sendbtn">Pošalji</button>
-                    
-                </form>
         </div>
 
         <div class="center" id="footer">
 
-          <a href="http://fonis.rs" target="blank"> <img class="fonis m-10" src="images/fonis.png" alt="FONIS"> </a> <br /><br />
+            <img class="fonis m-10" src="images/fonis.png" alt="FONIS"> <br /><br />
 
             <div class="zaprati">
                 <a href="https://www.facebook.com/fonis.rs/">
@@ -60,27 +52,7 @@
         </div>
 
     </div>
-    <script>
-   
-            document.querySelector(".nl-form").addEventListener("submit", function (event) {
-            event.preventDefault();
-            sendData();
-          });
-            function sendData() {
-                var XHR = new XMLHttpRequest();
-                var urlEncodedData = document.querySelector('#mail-input').value;
-                
-                XHR.addEventListener('load', function(event) {
-                  alert('Tvoj mejl je uspešno dodat u newsletter! Dobijaćes povremena obaveštenja o FON Hakatonu.');
-                });
-                XHR.addEventListener('error', function(event) {
-                  alert('Došlo je do greške! Pokušaj ponovo kasnije ili nam pošalji mejl na office@fonis.rs');
-                });
-                XHR.open('POST', 'submit.php');
-                XHR.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-                XHR.send(urlEncodedData);
-              }
-        </script>
+
 </body>
 
 </html>

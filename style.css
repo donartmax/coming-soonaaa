@@ -20,10 +20,10 @@ body {
     padding: 0;
     text-align: center;
     height: 25%;
-    padding-bottom: 10px;
+    padding-bottom:10px;
 }
 
-#body {
+#body {  
     height: 65%;
     padding: 20px;
 }
@@ -40,20 +40,15 @@ body {
 
 .galaksija {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     z-index: -1;
 }
-
 .hakaton {
     width: 16%;
-    width: 200px;
 }
 
 .fonis {
     width: 15%;
-    width: 170px;
 }
 
 .comingsoon {
@@ -72,55 +67,17 @@ body {
 .center {
     margin: auto;
     width: 80%;
-    padding: 10px;
+    padding: 10px; 
 }
 
 .zaprati a {
-    margin: 7px;
+    margin:7px;
     color: #fff;
     transition: 0.5s;
 }
-
 .zaprati a:hover {
     text-decoration: none;
     color: #FAA830;
 }
 
-#sendbtn {
-    background-color: #fff;
-    outline: none;
-    border: none;
-    height: 35px;
-    transition: 0.5s;
-}
 
-#mail-input {
-    height: 35px;
-    padding-left: 10px;
-}
-
-#sendbtn:hover {
-    background-color: #0176fc;
-    color: #fff;
-    cursor: pointer;
-}
-
-hr {
-    width: 40%;
-    background-color: #003b7e;
-    height: 1px;
-}
-@media(max-width: 991px) {
-#body{
-    padding: 0;
-}
-.nl-form input{
-    width: 60%;
-    display: inline;
-
-}
-.nl-form button{
-    display: inline;
-}
-
-}
